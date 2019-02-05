@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hero Guess Challenge</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styles.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <script src="main.js">
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+    <div class="superheader">
+        <div class="container-fluid">
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="herotag">SUPER HERO WORD CHALLENGE</h1>
+                    <p class="lead">Guess the Hero!</p>
+                </div>
+            </div>
+            <h1></h1>
+            <h2>Guess the hero!</h2>
+        </div>
+    </div>
+    <!-- Bootstrap Layout -->
+    <div class="layout">
+        <div class="row">
+            <div class="col">
+                <img id="default" src="assets/images/hero.jpg">
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+
+
+        <div class="card" style="width: 18rem;">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/81od01xCpVL._SX425_.jpg" class="card-img-top"
+                alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Guess the Hero!</h5>
+                <div class="rules">
+                    <section>
+                        <ol>
+                            <li id="rule1">Press any key to begin!</li>
+                            <li id="rule2">Choose any letter and find the hero</li>
+                            <li id="rule3">You have 10 chances to solve</li>
+                            <li id="rule4">Solve it correctly and you WIN!</li>
+                            <li id="rule5">Fail to solve it and you LOSE!</li>
+                        </ol>
+                    </section>
+                </div>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="score">
+            <div class="row">
+                <div class="col">
+                    <section>
+                        Score
+                    </section>
+                </div>
+                <div class="col-6-md">
+                    <section>
+                        Guess
+                    </section>
+                </div>
+                <div class="container">
+                    <div class="hangman">
+                        HANGMAN
+                    </div>
+
+                    <div class="alphaButtons">
+                        <button type="aButton" class="btn btn-outline-secondary">A</button>
+                        <button type="bButton" class="btn btn-outline-secondary">B</button>
+                        <button type="cButton" class="btn btn-outline-secondary">C</button>
+                        <button type="dButton" class="btn btn-outline-secondary">D</button>
+                        <button type="eButton" class="btn btn-outline-secondary">E</button>
+                        <button type="fButton" class="btn btn-outline-secondary">F</button>
+                        <button type="gButton" class="btn btn-outline-secondary">G</button>
+                        <button type="hButton" class="btn btn-outline-secondary">H</button>
+                        <button type="iButton" class="btn btn-outline-secondary">I</button>
+                        <button type="jButton" class="btn btn-outline-secondary">J</button>
+                        <button type="kButton" class="btn btn-outline-secondary">K</button>
+                        <button type="lButton" class="btn btn-outline-secondary">L</button>
+                        <button type="mButton" class="btn btn-outline-secondary">M</button>
+                        <button type="nButton" class="btn btn-outline-secondary">N</button>
+                        <button type="oButton" class="btn btn-outline-secondary">O</button>
+                        <button type="pButton" class="btn btn-outline-secondary">P</button>
+                        <button type="qButton" class="btn btn-outline-secondary">Q</button>
+                        <button type="rButton" class="btn btn-outline-secondary">R</button>
+                        <button type="sButton" class="btn btn-outline-secondary">S</button>
+                        <button type="tButton" class="btn btn-outline-secondary">T</button>
+                        <button type="uButton" class="btn btn-outline-secondary">U</button>
+                        <button type="vButton" class="btn btn-outline-secondary">V</button>
+                        <button type="wButton" class="btn btn-outline-secondary">W</button>
+                        <button type="xButton" class="btn btn-outline-secondary">X</button>
+                        <button type="yButton" class="btn btn-outline-secondary">Y</button>
+                        <button type="zButton" class="btn btn-outline-secondary">Z</button>
+
+
+
+                    </div>
+                    <!-- Bootstrap Java -->
+                    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                        crossorigin="anonymous"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+                        crossorigin="anonymous"></script>
+                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+                        crossorigin="anonymous"></script>
+                    <script>
+                        // <!--myJS-->
+                        $(document).ready(function () {
+                        var letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u",
+                            "v", "w", "x", "y", "z"];
+                        var heroes = ["wolverine", "hulk", "batman", "superman", "flash", "cyborg", "storm", "deadpool", "magneto", "black panther", "wonder woman"];
+                        var superWord = heroes[Math.floor(Math.random() * heroes.length)]
+                        var emptySpace = [];
+                        for (var i = 0; i < heroes.length; i++) {
+                            emptySpace[i]
+                        }
+                        
+                        var remainingLetters = heroes.length;
+
+                        var guesses = "";
+                        var counter = "";
+                        var correct = "";
+
+
+                        var heroName = document.getElementById("name")
+                        var letterCount = document.getElementById("counter")
+                        var lettersGuessed = document.getElementById("guesses")
+
+                        $(".alphaButtons").on("click", function() {
+                            alert(
+                                counter -=1
+                        )})
+// Googled answers. I confused myself googling.
+                        function startGame() {
+                            name = "batman";
+                            guesses = 10;
+                            counter = [];
+                            correct = [];
+                        
+                            for (var i = 0; i < heroes.length; ++i) {
+                                correct.push("_");
+                            }
+
+                            heroName.innerHTML = correct.join("");
+                            letterCount.innerHTML = allowedGuesses;
+
+                        }
+                        function fillIn(letter) {
+                            guesses--;
+                            letterCount.innerHTML = guesses;
+                        }
+                        if (name.indexOf(letter) === -1) {
+                            counter.push(letter);
+                            lettersGuessed.innerHTML = counter.join(",");
+                        } else {
+                            for (var i = 0; i < heroes.length; ++i) {
+                                if (heroes[i] === letter);
+                            }
+                        }
+                        heroName.innerHTML = guesses.join("");
+
+                        function winner() {
+                            if (correct.indexOf("_") === -1) {
+                                alert("You're a Hero");
+                            } else if (counter === 0) {
+                                alert("Call Batman!");
+                            }
+                        }
+                        // Several attempted game start functions. I feel like I did WAY too much without doing anything. Pretty much had brain freeze here.
+                        document.onkeyup = function (event) {
+                            var lettersGuessed = String.fromCharCode(event.keyCode).toLowerCase();
+                            fillIn(lettersGuessed);
+                            winner()
+                        };
+                        var startGame = onclick.superWord()
+                        startGame()
+                        document.addEventListener("keyup", myScript);
+
+                        }
+                    </script>
+</body>
+
+</html>

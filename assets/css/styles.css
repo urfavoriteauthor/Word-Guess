@@ -1,0 +1,14 @@
+.superheader {font-family:'Courier New', Courier, monospace; text-align: center;font-weight:bold;color:black;background-color:crimson;}
+.rules {font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 16px;}
+#default {width: 400px;height:auto;}
+.herotag {background-color: white;}
+.lead {background-color:navy;}
+.container-fluid {background-color:red;}
+/* .container {background-color:navy;} */
+.col-6-md {border-style: solid;}
+#rule1 {font-family:'Times New Roman', Times, serif;font-size: 18px;}
+#rule2 {font-family:'Times New Roman', Times, serif;font-size: 18px;}
+#rule3 {font-family:'Times New Roman', Times, serif;font-size: 18px;}
+#rule4 {font-family:'Times New Roman', Times, serif;font-size: 18px;}
+#rule5 {font-family:'Times New Roman', Times, serif;font-size: 18px;}
+.hangman {border-style: solid;border-width: 1px; width: 100%;}
